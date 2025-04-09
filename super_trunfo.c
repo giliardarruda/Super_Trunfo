@@ -6,7 +6,7 @@
 #define TAM_NOME 100
 
 int main() {
-    setlocale(LC_ALL, "Portuguese_Brazil");
+    setlocale(LC_ALL, "Portuguese");
 
     char buffer[100];
 
@@ -72,7 +72,7 @@ int main() {
     fgets(buffer, sizeof(buffer), stdin);
     sscanf(buffer, " %c", &estado2);
 
-    printf("Digite o código da carta (ex: A01): ");
+    printf("Digite o código da carta (ex: A02): ");
     fflush(stdout);
     fgets(codigo2, TAM_CODIGO, stdin);
     codigo2[strcspn(codigo2, "\n")] = '\0';
